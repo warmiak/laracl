@@ -1,7 +1,7 @@
 {
-  "name": "warmiak/laravel-package",
-  "description": "Orendo Laravel Frontend Preset",
-  "keywords": ["Orendo Laravel", "Orendo", "Laravel"],
+  "name": "warmiak/acl",
+  "description": "Laravel ACL",
+  "keywords": ["Orendo Laravel", "Orendo", "Laravel", "ACL"],
   "license": "MIT",
   "authors": [
     {
