@@ -1,0 +1,23 @@
+{
+  "name": "warmiak/laravel-package",
+  "description": "Orendo Laravel Frontend Preset",
+  "keywords": ["Orendo Laravel", "Orendo", "Laravel"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Warmiak",
+      "email": "peter.wolkiewicz@orendo.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Orendo\\LaravelPackage\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["Orendo\\LaravelPackage\\OrendoServiceProvider"]
+    }
+  }
+}

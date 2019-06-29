@@ -1,0 +1,32 @@
+[*.php]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.js]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+# editorconfig-tools is unable to ignore longs strings or urls
+max_line_length = null
+
+[*.{yml,json,sh}]
+charset                  = utf-8
+end_of_line              = lf
+indent_size              = 2
+indent_style             = space
+trim_trailing_whitespace = true
+insert_final_newline     = true
+
+[*.md]
+charset                  = utf-8
+end_of_line              = lf
+indent_style             = space
+trim_trailing_whitespace = false
+insert_final_newline     = true
