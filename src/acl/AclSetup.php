@@ -92,7 +92,7 @@ class AclSetup extends Command
             $this->call('key:generate');
         }
 
-        return Log::info('Assets successful installed.');
+        Log::info('Assets successful installed.');
 
         /**********************/
         /*  Migrate Database  */
@@ -133,6 +133,5 @@ class AclSetup extends Command
         $this->line('');
 
         Log::info('ACL: Laravel ACL System successful installed.');
-
     }
 }
