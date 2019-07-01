@@ -86,6 +86,8 @@ class AclSetup extends Command
         Assets::installAssets();
         $this->info(html_entity_decode("&#10003;") .' Assets installed successful. ');
 
+        sleep(5);
+
         $this->call('storage:link');
 
         if (empty(env('APP_KEY'))) {
