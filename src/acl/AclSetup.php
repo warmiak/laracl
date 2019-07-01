@@ -82,19 +82,20 @@ class AclSetup extends Command
         /********************/
         /*  Install Assets  */
         /********************/
+		$setupOption = $this->choice('Choose your Option', ['Install', 'Setup'], 0);
 
-        Assets::installAssets();
-        $this->info(html_entity_decode("&#10003;") .' Assets installed successful. ');
+        if ($setupOption == "Install") {
+            Assets::installAssets();
+            $this->info(html_entity_decode("&#10003;") .' Assets installed successful. ');
 
-        sleep(5);
+            $this->call('storage:link');
 
-        $this->call('storage:link');
+            if (empty(env('APP_KEY'))) {
+                $this->call('key:generate');
+            }
 
-        if (empty(env('APP_KEY'))) {
-            $this->call('key:generate');
+            return Log::info('Assets successful installed.');
         }
-
-        Log::info('Assets successful installed.');
 
         /**********************/
         /*  Migrate Database  */
