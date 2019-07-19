@@ -1,6 +1,6 @@
 {
-  "name": "warmiak/acl",
-  "description": "Laravel ACL",
+  "name": "warmiak/laracl",
+  "description": "Laravel ACL Package",
   "keywords": ["Orendo Laravel", "Orendo", "Laravel", "ACL"],
   "license": "MIT",
   "authors": [
@@ -17,7 +17,7 @@
   },
   "extra": {
     "laravel": {
-      "providers": ["Orendo\\LaravelPackage\\OrendoServiceProvider"]
+      "providers": ["Orendo\\LaravelPackage\\LaraclServiceProvider"]
     }
   }
 }
