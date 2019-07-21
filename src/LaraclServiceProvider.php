@@ -7,7 +7,7 @@ use Illuminate\Foundation\Console\PresetCommand;
 use Orendo\LaravelPackage\Acl\AclSetup;
 use Orendo\LaravelPackage\Tailwind\Tailwind;
 
-class OrendoServiceProvider extends ServiceProvider
+class LaraclServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
